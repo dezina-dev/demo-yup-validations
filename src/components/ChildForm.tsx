@@ -46,12 +46,14 @@ const ChildForm = ({setIsvalidated, setFormdata}: UserSubmitForm) => {
       });
     
       const onSubmit = (data: UserSubmitForm) => {
-        // setFormdata(data)
+        setIsvalidated(1)
+        setFormdata(data)
+        console.log("onSubmit data", data)
         console.log(JSON.stringify(data, null, 2));
       };
 
     return (
-        <div className="register-form">
+        <div className="register-form2">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label>Full Name</label>

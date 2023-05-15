@@ -2,11 +2,18 @@
     color: red;
     padding-top: 5px;
 }
-.register-form {
+.register-form1 {
     border: 1px solid gray;
     padding: 30px;
     margin: auto;
     background-color: honeydew;
+    width: 50%;
+}
+.register-form2 {
+    border: 1px solid gray;
+    padding: 30px;
+    margin: auto;
+    background-color: rgb(218, 144, 187);
     width: 50%;
 }
 .form-group {
@@ -18,4 +25,7 @@ label {
 .form-control {
     width: 250px;
     height: 20px;
+}
+h4 {
+    text-align: center;
 }

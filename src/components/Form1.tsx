@@ -48,7 +48,9 @@ const Form1 = () => {
       };
 
     return (
-        <div className="register-form">
+      <>
+      <h4>Form with props passing</h4>
+        <div className="register-form1">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group">
             <label>Full Name</label>
@@ -131,6 +133,7 @@ const Form1 = () => {
           </div>
         </form>
       </div>
+      </>
     )
 }
 

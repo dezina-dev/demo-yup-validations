@@ -59,9 +59,12 @@ const MainForm = () => {
         console.log(JSON.stringify(data, null, 2));
       };
 
+console.log("isvalidated", isvalidated)
+console.log("formdata", formdata)
+
     return (
         <>
-        Main
+        <h4>Form with props passing</h4>
         <ChildForm
         {...formdata}
         setFormdata={setFormdata}
