@@ -11,10 +11,11 @@ type UserSubmitForm = {
   password: string;
   confirmPassword: string;
   acceptTerms: boolean;
-  setLoginStatus: Dispatch<SetStateAction<boolean>>;
+  setIsvalidated: Dispatch<SetStateAction<number>>;
+  setFormdata: Dispatch<SetStateAction<any>>;
 };
 
-const ChildForm = (formdata: UserSubmitForm) => {
+const ChildForm = ({setIsvalidated, setFormdata}: UserSubmitForm) => {
 
     const validationSchema = Yup.object().shape({
         fullname: Yup.string().required('Fullname is required'),

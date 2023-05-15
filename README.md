@@ -1,6 +1,6 @@
 # Yup validations in form
 
-There is form with yup validations & no props passing its path is /Form1
+There is a form with yup validations & no props passing its path is /Form1
 There is another form with yup validations & props passsing, its path is /Form2
 
 

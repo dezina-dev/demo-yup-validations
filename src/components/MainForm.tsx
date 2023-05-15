@@ -16,16 +16,16 @@ type UserSubmitForm = {
 
 const MainForm = () => {
 
-    const [formdata, setFormdata] = useState<UserSubmitForm>({
-        fullname: '',
-        username: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-        acceptTerms: false
-      });
-
-    // const [formdata1, setFormdata1] = useState<{}>({})
+    // const [formdata, setFormdata] = useState<UserSubmitForm>({
+    //     fullname: '',
+    //     username: '',
+    //     email: '',
+    //     password: '',
+    //     confirmPassword: '',
+    //     acceptTerms: false
+    //   });
+    const [formdata, setFormdata] = useState<any>();
+    const [isvalidated, setIsvalidated] = useState<number>(0);
 
     const validationSchema = Yup.object().shape({
         fullname: Yup.string().required('Fullname is required'),
@@ -64,8 +64,8 @@ const MainForm = () => {
         Main
         <ChildForm
         {...formdata}
-        // setFormdata={setFormdata}
-        setLoginStatus={setFormdata}
+        setFormdata={setFormdata}
+        setIsvalidated={setIsvalidated}
         />
         </>
     )
